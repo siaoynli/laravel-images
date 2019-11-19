@@ -35,7 +35,7 @@ class ImageServiceProvider extends ServiceProvider
 
     public function provides()
     {
-        return ['image'];
+        return ['compress-image'];
     }
 
 
