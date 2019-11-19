@@ -1,0 +1,19 @@
+{
+    "name": "siaoynli/laravel-images",
+    "description": "laravel compress images package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "siaoynli",
+            "email": "siaoynli@126.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Siaoynli\\Compress\\": "src/"
+        }
+    },
+    "require": {
+        "intervention/image": "^2.5"
+    }
+}
