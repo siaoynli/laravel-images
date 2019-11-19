@@ -8,7 +8,7 @@
 * @Description:
 */
 
-namespace Siaoynli\Compress;
+namespace Siaoynli\Image;
 
 use Illuminate\Config\Repository;
 use Intervention\Image\Facades\Image as InterventionImage;

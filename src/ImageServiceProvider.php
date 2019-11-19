@@ -1,6 +1,6 @@
 <?php
 
-namespace Siaoynli\Compress;
+namespace Siaoynli\Image;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -15,7 +15,7 @@ class ImageServiceProvider extends ServiceProvider
     public function register()
     {
 
-        $this->app->singleton('image', function ($app) {
+        $this->app->singleton('compress-image', function ($app) {
             return new Image($app['config']);
         });
     }
