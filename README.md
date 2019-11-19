@@ -13,26 +13,26 @@ composer require siaoynli/laravel-images
 add the ServiceProvider to the providers array in config/app.php
 
 ```
-Siaoynli\Compress\ImageServiceProvider::class,
+Siaoynli\Image\ImageServiceProvider::class,
 ```
 
 If you want to use the facade to log messages, add this to your facades in app.php:
 
 ```
-  'Image' => Siaoynli\Compress\Facades\Image::class,
+  'Image' => Siaoynli\Image\Facades\Image::class,
 ```
 
 Copy the package config to your local config with the publish command:
 
 ```
-php artisan vendor:publish --provider="Siaoynli\Compress\ImageServiceProvider"
+php artisan vendor:publish --provider="Siaoynli\Image\ImageServiceProvider"
 ```
 
 ## Usage
 
 ```
-use Upload;
-use Image;
+use  Siaoynli\Upload\Facades\Upload;
+use  Siaoynli\Image\Facades\Image;
 
 //upload
 $info=Upload::do()
