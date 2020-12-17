@@ -12,7 +12,7 @@ return [
     //水印
     "water" => [
         //是否水印
-        "create" => true,
+        "enable" => true,
         //水印文件
         "water_file" => public_path("/logo.png"),
         //水印位置
