@@ -154,6 +154,7 @@ class Image
     {
         $this->image = $this->image->resize($width, null, function ($constraint) {
             $constraint->aspectRatio();
+            $constraint->upsize();
         });
     }
 
@@ -161,6 +162,7 @@ class Image
     {
         $this->image = $this->image->resize(null, $height, function ($constraint) {
             $constraint->aspectRatio();
+            $constraint->upsize();
         });
     }
 }
