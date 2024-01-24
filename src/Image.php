@@ -51,7 +51,7 @@ class Image
      */
     public function resize($width = "", $height = "")
     {
-        $_image = getimagesize($this->image);
+        $_image = getimagesize($this->filename);
         $width = $width ?: $this->config['thumb']['width'];
         $height = $height ?: $this->config['thumb']['height'];
         if (!$_image) {
